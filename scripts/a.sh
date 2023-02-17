@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /home/ubuntu
 npm install
-npm run-script build
+npm install --save create-react-app react-scripts
