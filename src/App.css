@@ -1,0 +1,412 @@
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+.light{
+--background:rgb(237,237,237);
+--textcolor:black;
+}
+.dark{
+    --background:rgba(0,0,0,0.7);
+    --textcolor:white;
+}
+body{
+    background-color: var(--background);
+}
+.navbar{
+    background-color: var(--background);
+}
+.nav-item a,.navbar-brand{
+ color: var(--textcolor);
+}
+.leftnav{
+    background-color: var(--background);
+    height: 100vh;
+    position: fixed;
+}
+.rightnav{
+    height: 100vh;
+    margin-left: 16rem;
+}
+.userprf{
+    max-width: 6rem;
+    max-height: 6rem;
+    min-width: 6rem;
+    min-height: 6rem;
+    border-radius: 50%;
+}
+.lname a,.usname{
+    color: var(--textcolor);
+}
+.navIteam{
+    position: relative;
+}
+.navIteam li{
+  list-style: none;
+  padding-top: 0.5rem;
+  cursor: pointer;
+  color: var(--textcolor);
+}
+.naviteams{
+    padding-left: 1.8rem;
+    margin-left: 0rem;
+    width: 100%;
+    height: 7vh;    
+}
+.naviteams:hover{
+    background-color: lightgray;
+}
+.navIteam i{
+padding-right: 1rem;
+}
+
+.navIteam li a{   
+    text-decoration: none;
+    font-size: 1.1rem;  
+    font-family: 'Charis SIL', serif;
+    color: var(--textcolor);
+}
+.rightimg,.rightimg img{
+    height: 22rem;
+    width: 100%;
+    background-size: cover;
+}
+.login{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: var(--background);
+}
+.child{
+    margin-left: 13rem;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
+.sogimg{
+  position: relative;
+  max-width: 11rem;
+  min-width: 11rem;
+  max-height: 9rem;
+  min-height: 9rem;
+}
+.artsogimg{
+    max-width: 8rem;
+    min-width: 8rem;
+    max-height: 8rem;
+    min-height: 8rem;
+    border-radius:50%; 
+    border:2px solid blue;
+}
+.xyz{
+  background-color: rgba(0, 0, 0, 0);
+  }
+.playicon{
+    position:absolute;
+    left: 40%;
+    top:20%;
+    font-size: 3rem;
+    color:var(--textcolor);
+    display: none;
+}
+.xyz h6{
+    color: var(--textcolor);
+}
+.xyz:hover .playicon{
+    display: block;
+}
+.srch input{
+  position: relative;
+  font-size: 1rem;
+  padding: 0.1rem;
+  height: 1.8rem;
+}
+.srch a{
+    position:absolute;
+    font-size: 1rem;
+    padding: 0.1rem;
+    height: 2rem;
+    left: 80%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+.bar{
+    font-size: 1.8rem;
+    color: var(--textcolor);
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    display: none;
+}
+.playbox{
+    height: 23rem;
+}
+.playleft{
+    height: 30rem;
+}
+.playright{
+    height: 30rem;
+}
+.playimg{
+    max-width: 22rem;
+    max-height: 15rem;
+    min-width: 22rem;
+    min-height: 15rem;
+}
+
+.sogdetail{
+    padding-top: 2rem;
+    height: 10rem;
+    color: var(--textcolor);
+    text-transform: capitalize;
+}
+.sogslider{
+    height: 5rem;
+}
+.slider{
+    width:100%;
+}
+.sogicondiv{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.8rem;
+}
+.sogIcon{
+    font-size: 1.8rem;
+    color: var(--textcolor);
+}
+.songsuggestion{
+    height: 25rem;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;  
+    margin-bottom: 2rem;  
+}
+.songsuggestion .card{
+background-color: var(--background);
+color: var(--textcolor);
+text-transform: capitalize;
+}
+.sugimg{
+    max-width: 7rem;
+    max-height: 4rem;
+    min-width: 7rem;
+    min-height: 4rem;
+}
+.sugbox{
+    display: flex;
+    justify-content: space-between;
+}
+.sugbox i{
+    font-size: 2.2rem;
+    padding-right: 2rem;
+}
+.bor{
+    border: 2px solid blue;
+}
+.playcomp{
+    display: flex;
+    justify-content: space-between;
+}
+.playmoresection i{
+    font-size: 1.5rem;
+    color: var(--textcolor);
+}
+.playmoresection{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.8rem;
+}
+.artall{
+    border-radius: 3rem;
+    width: 8rem;
+}
+.listpic{
+    font-size: 10rem;
+    cursor: pointer; 
+    color: var(--textcolor);  
+}
+.plyupload{
+    border-radius: 1rem;
+    border: 2px dashed black;
+    height: 15rem;
+    padding-top: 2.5rem;
+}
+.playlists{
+    max-width: 11rem;
+  min-width: 11rem;
+  max-height: 8rem;
+  min-height: 8rem;
+}
+.time{
+    display: flex;
+    justify-content: space-between;
+    color: var(--textcolor);
+}
+.srlist li{
+    list-style: none;
+    cursor: pointer;
+    margin-left: -1.5rem;
+}
+.srlist{
+    z-index: 1;
+    position: absolute;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    background-color: white;
+}
+.txt{
+width:14rem;
+color: var(--textcolor);
+}
+.txt input{
+    background-color: rgba(0, 0, 0, 0);
+    color:var(--textcolor);
+    font-size: 1.3rem;
+}
+.plu{
+    color: var(--textcolor);
+}
+
+@media (max-width:460px) {
+    .leftnav{
+        display: none;
+    }
+    .bar{
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+    .navbar{
+        display: none;
+    }
+    .leftnav{
+        background-color: var(--background);
+        height: 100vh;
+        width:50%;
+        position: absolute;
+        z-index: 1;
+        transition:all 0.6s ease-in-out;
+    }
+    .userprf{
+        margin-top: 4rem;
+    }
+    .naviteams{
+        padding-left: 0.8rem;   
+    }
+    .rightnav{
+        position:relative;
+        margin-left: 0rem;
+    }
+    .navIteam li{
+        margin-left: 0rem;
+        list-style: none;
+        padding-top: 1rem;
+        padding-left: 0.3rem;
+        cursor: pointer;
+        color: var(--textcolor);
+        float: left;
+      }
+      .navIteam ul li a{
+          margin-top: 0.8rem;
+          text-decoration: none;
+          font-size: 1rem;
+          font-family: 'Charis SIL', serif;
+          color: var(--textcolor);
+      }
+      .sogimg{
+        position: relative;
+        max-width: 18rem;
+        min-width: 18rem;
+        max-height: 9rem;
+        min-height: 9rem;
+      }
+      .xyz{
+          margin-left: 0.3rem;
+      }
+      .rightimg{
+          margin-left: 0.1rem;
+      }
+ 
+    .child{
+        margin: 2.5rem;
+        position: absolute;
+        left: 40%;
+        top: 40%;
+        
+    }
+    .srch a{
+        left: 80%;        
+    }
+}
+@media (max-width:768px) {
+    .leftnav{
+        display: none;
+    }
+    .bar{
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+    .navbar{
+        display: none;
+    }
+    .leftnav{
+        background-color: var(--background);
+        height: 100vh;
+        width:50%;
+        position: absolute;
+        z-index: 1;
+        transition:all 0.6s ease-in-out;
+    }
+    .userprf{
+        margin-top: 4rem;
+    }
+    .naviteams{
+        padding-left: 0.8rem;   
+    }
+    .rightnav{
+        position:relative;
+    }
+    .navIteam li{
+        margin-left: 0rem;
+        list-style: none;
+        padding-top: 1rem;
+        padding-left: 0.3rem;
+        cursor: pointer;
+        color: var(--textcolor);
+        float: left;
+      }
+      .navIteam ul li a{
+          margin-top: 0.8rem;
+          text-decoration: none;
+          font-size: 1rem;
+          font-family: 'Charis SIL', serif;
+          color: var(--textcolor);
+      }
+      .sogimg{
+        position: relative;
+        max-width: 18rem;
+        min-width: 18rem;
+        max-height: 9rem;
+        min-height: 9rem;
+      }
+      .xyz{
+          margin-left: 0.3rem;
+      }
+      .rightimg{
+          margin-left: 0.1rem;
+      }
+ 
+    .child{
+        margin: 2.5rem;
+        position: absolute;
+        left: 40%;
+        top: 40%;
+        
+    }
+    .srch a{
+        left: 80%;        
+    }
+}
