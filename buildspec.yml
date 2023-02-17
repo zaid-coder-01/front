@@ -2,8 +2,14 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: 16    
+    commands:
+    - curl -sL https: //deb.nodesource. com/setup 12. | bash -
+    - apt install -y nodejs
+    - curl -sS https: //dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+
+  pre_build:
+    commands:
+      - npm install
   build:
     commands:
       - npm run build
