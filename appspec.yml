@@ -7,10 +7,10 @@ files:
     destination: /home/ubuntu/
 hooks:
   AfterInstall:
-    - location: scripts/a.sh
+    - location: /scripts/a.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: scripts/app.sh
+    - location: /scripts/app.sh
       timeout: 300
       runas: root
