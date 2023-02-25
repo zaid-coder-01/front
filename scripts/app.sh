@@ -1,2 +1,3 @@
 #!/bin/bash
-sudo npm start
+npm install
+npm start
