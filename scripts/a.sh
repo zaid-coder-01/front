@@ -1,3 +1,3 @@
 #!/bin/bash
 sudo npm install -y
-sudo npm install -g react-scripts -y
+sudo npm run-script build
