@@ -1,3 +1,3 @@
 #!/bin/bash
-sudo npm install -y
-sudo npm run-script build
+npm install
+npm install --save create-react-app react-scripts
