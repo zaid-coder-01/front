@@ -7,12 +7,12 @@ phases:
    
     commands:
         # install npm
-        - npm install
+        - npm  -f install
        
   build:
     commands:
         # run build script
-        - npm run-script build
+        - npm run build
 artifacts:
   files:
     - "**/*"
