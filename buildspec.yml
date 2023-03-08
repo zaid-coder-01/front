@@ -4,16 +4,12 @@ phases:
   install:
     runtime-versions:
       nodejs: 16
-   
     commands:
-        # install npm
-        - npm  -f install
-       
+      - npm -f install
   build:
     commands:
-        # run build script
-        - npm run build
+      - npm run build
 artifacts:
   files:
-    - "**/*"
-
+    - '**/*'
+  base-directory: 'build'
