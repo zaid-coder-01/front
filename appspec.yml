@@ -1,20 +1,10 @@
-
 version: 0.0
-os: linux 
-
+os: linux
 files:
   - source: /
     destination: /home/ubuntu/
 hooks:
-#   BeforeInstall:
-#     - location: scripts/g.sh
-#       timeout: 300
-#       runas: root
-#   AfterInstall:
-#     - location: /scripts/a.sh
-#       timeout: 300
-#       runas: root
-  ApplicationStart:
-    - location: /scripts/app.sh
-      timeout: 300
+  AfterInstall:
+    - location: a.sh
+      timeout: 180
       runas: root
