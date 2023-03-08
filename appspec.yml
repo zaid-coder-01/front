@@ -5,6 +5,6 @@ files:
     destination: /home/ubuntu/
 hooks:
   AfterInstall:
-    - location: a.sh
+    - location: scripts/a.sh
       timeout: 180
       runas: root
