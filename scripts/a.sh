@@ -1,3 +1,10 @@
 #!/bin/bash
+
+# Navigate to the application directory
+cd /home/ubuntu/
+
+# Install any dependencies
 npm -f install
-npm install --save create-react-app react-scripts
+
+# Start the application
+npm start
